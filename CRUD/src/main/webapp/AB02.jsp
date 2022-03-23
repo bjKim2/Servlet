@@ -6,6 +6,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+<%-- 
+	제 1페이지에서 입력 버튼 누르면 나오는 페이지
+	 폼형식으로 속성값마다 값을 입력받아 2_1page(DB에 insert 하는 Page)로 전달 	
+ --%>
 <meta charset="UTF-8">
 <title>입력창</title>
 </head>

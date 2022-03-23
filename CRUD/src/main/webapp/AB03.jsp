@@ -4,10 +4,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+<%--
+	 1page 테이블 에서 key 값의 하이퍼링크를 누르면 나오는 페이지(3page)
+	 1page에서 한 레코드의 키값 하나를 전달받는다.
+	 키값으로 DB에서 select 문을 이용해 레코드 전체를 받아와 
+	 form 의 input 칸에 초기값으로 설정해둔다. 
+--%>
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
 <script type="text/javascript">
+	/* 삭제 버튼을 누르면 호출되는 함수 5page로 가면서 키값을 get방식으로 전달 */
  	function del(a) {
  		var b = a.value
 		location.href = "AB05.jsp?seq="+b;
@@ -17,25 +24,23 @@
 <body>
 
 <%
+	request.setCharacterEncoding("utf-8");
 	String seq = request.getParameter("seq");
-
+	
+	//변수 선언과 초기값 설정
 	String email = "";
 	String rel ="";
 	String name = "";
 	String tel = "",address = "";
-	session.setAttribute("seq",seq);
-	
-	String userid = request.getParameter("userid");
-	
-
-	
-	request.setCharacterEncoding("utf-8");
+		
 	String url_mysql = "jdbc:mysql://localhost:3306/customer?serverTimezone=Asia/Seoul&characterEncoding=utf-8&useSSL=false";
 	String id_mysql = "root";
 	String pw_mysql = "qwer1234";
 	
+	//받은 키값으로 맞는 레코드 검색
 	String query = "select * from addressBook where seq = '" + seq + "'";
 	
+	//디비 연동 후 변수에 저장
 	try{
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		Connection conn_mysql = DriverManager.getConnection(url_mysql, id_mysql, pw_mysql);
@@ -57,14 +62,13 @@
 		
 	}catch(Exception e){
 		e.printStackTrace();
-		e.getMessage();
 
 	}
 	
 
 
 %>
-
+<!--출력  -->
 <h1>수정 후 확인을 눌러주세요 </h1>
 	<form action="AB04.jsp" method="post" name="memberform">
 		<table>
@@ -94,9 +98,8 @@
 				<td><input type="text" name="rel" value="<%=rel%>"></td>
 			</tr>
 		</table>
+		<!-- 수정버튼은 submit 삭제버튼은 del 함수 호출(js함수)   -->
 		<input type="submit" value="수정">
-		
-		
 		<input type="button" value="삭제" onclick="del(seq)">  
 		
 	</form>
