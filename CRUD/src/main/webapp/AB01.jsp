@@ -62,6 +62,7 @@
 		Statement stmt_mysql = conn_mysql.createStatement();
 		ResultSet rs = stmt_mysql.executeQuery(query);
 		
+		//while 문안에 들어갈 카운트 선언(레코드 갯수)
 		int cnt = 0 ;
 %>
 
@@ -73,7 +74,7 @@
 			
 			
 <%		
-		//모든 레코드 값 받아오기
+		//모든 레코드 값 받아아서 HTML테이블에 출력
 		while(rs.next()){
 	
 %>			
@@ -104,14 +105,14 @@
 			cnt++;
 		}
 %>		
-		</table>
-		<br>
-		<div align="left" style = "width :29%">
+		</table> <br>
 		
-				<form action="#">
-					<input type="button" value="입력" onclick="insert()">
-				</form>
+		<div align="left" style = "width :29%">
+			<form action="#">
+				<input type="button" value="입력" onclick="insert()">
+			</form>
 		</div>
+		
 		<h3> 총 인원은 <%=cnt %> 입니다.</h3>
 <%
 		//connection,statement close 

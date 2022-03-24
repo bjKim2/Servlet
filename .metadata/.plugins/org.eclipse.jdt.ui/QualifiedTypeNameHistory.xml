@@ -1,11 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.lang.Process"/>
-    <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
     <fullyQualifiedTypeName name="java.util.GregorianCalendar"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.awt.Desktop.Action"/>
+    <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
+    <fullyQualifiedTypeName name="com.javalec.bbs.command.BCommand"/>
+    <fullyQualifiedTypeName name="com.javalec.bbs.command.BListCommand"/>
+    <fullyQualifiedTypeName name="javax.sql.DataSource"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="javax.naming.Context"/>
+    <fullyQualifiedTypeName name="javax.naming.InitialContext"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="java.sql.Timestamp"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="com.mysql.cj.x.protobuf.MysqlxDatatypes.Array"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="org.apache.tomcat.jdbc.pool.DataSource"/>
+    <fullyQualifiedTypeName name="com.javalec.bbs.command.BinsertCommand"/>
+    <fullyQualifiedTypeName name="com.javalec.bbs.dao.BDao_insert"/>
+    <fullyQualifiedTypeName name="com.javalec.bbs.dao.BWriteCommand"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="com.javalec.bbs.command.BContentCommand"/>
+    <fullyQualifiedTypeName name="com.javalec.bbs.dto.BDto"/>
+    <fullyQualifiedTypeName name="com.javalec.bbs.command.BModifyCommand"/>
+    <fullyQualifiedTypeName name="com.javalec.bbs.dao.BDao"/>
+    <fullyQualifiedTypeName name="com.javalec.bbs.command.BDeleteCommand"/>
 </qualifiedTypeNameHistroy>
