@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
     <typeInfo handle="=MVCBoard/src\/main\/java&lt;com.javalec.bbs.command{BCommand.java[BCommand" modifiers="513" timestamp="1648091749000"/>
+    <typeInfo handle="=Oneline_mvc/src\/main\/java&lt;com.javalec.oneline.command{OCommand.java[OCommand" modifiers="513" timestamp="1648175324000"/>
+    <typeInfo handle="=MVCQUIZ/src\/main\/java&lt;com.javalec.quiz.command{QCommand.java[QCommand" modifiers="513" timestamp="1648189274000"/>
 </typeInfoHistroy>

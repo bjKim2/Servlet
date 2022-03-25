@@ -10,9 +10,7 @@
 <script type="text/javascript">
 	/* 삭제 버튼을 누르면 호출되는 함수 5page로 가면서 키값을 get방식으로 전달 */
  	function del(a) {
- 		var b = a.value
-		location.href = "del.do?bid="+b;
-		
+		location.href = "del.do?bid="+a;
 	}
 </script>
 <body>
@@ -38,7 +36,7 @@
 			</tr>
 			<tr>
 				<td colspan="2"> <input type="submit" value="수정"> &nbsp;&nbsp;
-					<input type="button" value="삭제" onclick="del(bid)">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="list.do">목록 보기</a> 
+					<input type="button" value="삭제" onclick="del(${content_view.bid}) ">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="list.do">목록 보기</a> 
 				
 				</td>
 			</tr>

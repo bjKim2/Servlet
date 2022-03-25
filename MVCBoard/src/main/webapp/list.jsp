@@ -36,10 +36,5 @@
 
 <br>
 
-<%
-
-	ArrayList<BDto> arr = (ArrayList)request.getAttribute("list");
-	
-%>
 </body>
 </html>
